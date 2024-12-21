@@ -1,202 +1,49 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: black;
-    padding: 0;
-  }
-  
-  header {
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
-    height: 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  header nav a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
-  }
-  
-  header nav a:hover {
-    text-decoration: underline;
-  }
-/* header hogya */
+.carousel-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0)
 
-
-
-/* image section  */
-
-.image-container {
-    flex: 1; /* Allow the image to take up one part of the section */
-    max-width: 300px; /* Limit the image width */
-    padding-left: 70px;
-    padding-top: 20px;
-  }
-
-.image-text-section {
-    display: flex;
-    align-items: center; /* Center content vertically */
-    justify-content: space-between; /* Space between the image and text */
-    padding: 20px;
-    gap: 20px; /* Space between image and text */
-    border-color: red;
-  }
-
-  .image-container {
-    flex: 1; /* Allow the image to take up one part of the section */
-    max-width: 300px; /* Limit the image width */
-  }
-
-  .image-container img {
-    width: 100%; /* Make the image responsive */
-    height: auto;
-    border-radius: 10px; /* Optional: Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for a card-like effect */
-  }
-
-  .text-container {
-    flex: 2; /* Allow the text to take up two parts of the section */
-    text-align: left;
-    background-color: red;
-    height: 35vh;
-    padding-right: 15vh;
-    margin-right: 10vh;
-  }
-  
-  .text-container h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .text-container p {
-    font-size: 16px;
-    line-height: 1.6;
-  }
-
-/* hero page hogya */
-
-
-
-/* image carousel */
-
-/* Carousel Section */
-.carousel-section {
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .carousel-section h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: white;
-  }
-  
-  /* Carousel Container */
-  .carousel-container {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden; /* Hide overflow for a clean look */
-    width: 90%;
-    margin: auto;
-  }
-  
-  .carousel {
-    display: flex;
-    transition: transform 0.5s ease-in-out; /* Smooth scrolling */
-    gap: 10px;
-  }
-  
-  .carousel-item {
-    flex: 0 0 auto;
-    width: 200px;
-    text-align: center;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    opacity: 0.4; /* Default opacity for inactive items */
-    transform: scale(0.8); /* Default scaling for inactive items */
-    transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition for active state */
-  }
-  
-  .carousel-item.active {
-    opacity: 1; /* Fully visible for active item */
-    transform: scale(1.2); /* Larger scaling for active item */
-    z-index: 5; /* Bring active item to the front */
-  }
-  
-  .carousel-item img {
-    width: 100%;
-    height: auto;
-  }
-
-  .carousel-item video {
-    width: 100%;
-    height: auto;
-    display: block; /* Prevents extra space below video */
-  }
-  
-  /* Carousel Buttons */
-  .carousel-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: #333;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    border-radius: 50%;
-    font-size: 18px;
-    z-index: 10;
-  }
-  
-  .carousel-btn.left {
-    left: 10px;
-  }
-  
-  .carousel-btn.right {
-    right: 10px;
-  }
-  
-  .carousel-btn:hover {
-    background-color: #555;
-  }
-  
-  
-  
-/* image carousel hogya */
-
-.form-section form input, .form-section form textarea {
-    display: block;
-    width: 80%;
-    margin: 10px auto;
-    padding: 10px;
-    font-size: 16px;
-  }
-  .form-section form button {
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-
- 
-
-footer {
-    background-color: #333; /* Dark background color */
-    color: #fff; /* White text color */
-    text-align: center; /* Center the text */
-    padding: 10px 0; /* Add some padding top and bottom */
-    position: relative; /* Needed for absolute positioning of potential child elements */
-    bottom: 0; /* Stick to the bottom of the viewport */
-    width: 100%; /* Full width */
 }
+/* for images */
+.carousel{
+  display: flex;
+}
+
+/* for buttons */
+.carousel-container{ 
+  display: flex;
+}
+.carousel-section h2{
+  font-size: 24px;
+  margin-bottom: 10px;
+  }
+  .carousel-section p{
+    font-size: 18px;
+    margin-bottom: 20px;
+    }
+    .carousel img{
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      }
+      .carousel-section button{
+        padding: 10px 20px;
+        font-size: 18px;
+        background-color: #4CAF50;
+        color: #fff;
+        border: none;
+        border-radius: 10px;  
+        cursor: pointer;
+        height: 50px;
+        margin-top: 10vh;
+        } 
+        .carousel-section button:hover{
+          background-color: #3e8e41;
+          }
